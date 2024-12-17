@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> MYSELF PAGE </title>
+</head>
+<style>
+ *{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: san-serif;
+ font-weight: lighter;
+}
+body{
+ background: url( image/photo4.jpg);
+ background-size: cover;
+.flex{
+ display: flex;
+ align-items: center;
+}
+.container1{
+ width: 100%;
+ height: 6opx;
+ color: white;
+ background: rgb(0,0,0);
+}
+nav{
+ margin: 0 30px;
+}
+ul{
+ list-style: none;
+ margin: 20px;
+ font size: 20px;
+}
+li{
+ margin: 0 10px;
+ cursor: pointer;
+}
+li a {
+ text-decoration: none;
+ color: white; /* Set hyperlink color to white */
+ font-size: 20px;
+}
+li a:hover {
+   color: lightgreen;
+}
+.inp{
+ position: absolute;
+ right: 5px;
+}
+.input{
+ height: 45px;
+ border-radius: 5px;
+ font-size: 17px;
+}
+.text{
+ padding-left: 20px;
+ margin-right: 5px;
+ outline: 1px solid blue;
+}
+.submit{
+ width: 100px;
+ margin-right: 50px;
+ background: black;
+ color: green;
+ border: 1px solid green;
+}
+div.polaroid {
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+a:link {
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+body {
+   font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    margin: 20px;
+ }
+.title {
+    background-color: #444;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #555;
+    margin-top: 5px;
+}
+    .content {
+     display: none;
+     padding: 10px;
+     background-color: #555;
+     border: 1px solid #666;
+     margin-top: -1px;
+}
+
+   .content.active {
+    display: block;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+ </style>
+
+<body>
+    <div class = "container1 flex">
+         <nav class = "flex">
+<h1 style="font-family: forte;"> WISH </h1>
+           <ul class= "flex">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="myself.html"> Myself</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+           </ul>
+<div class ="inp">
+  <input type ="text" placeholder = "Search" class = "input text">
+  <input type = "submit" value = "Search" class = "input submit" >
+ </div>
+</nav>
+</div>
+
+<style>
+h1 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+</style>
+<body>
+
+<h1 style="color: white;"> BIODATA </h1>
+<table border ="0" width="100%" align="center">
+<tr align="center" valign="middle">
+<td> 
+
+<div class="polaroid">
+  <img src="image/bio.jpg" alt=" Biodata Image" style="width:100%">
+  <div class="container">
+  <p style="font-family: 'Forte', sans-serif;"> This is the story of a teenage girl who lives far from her family because she is pursuing her education and aspires to be successful. She has a lovely smile that draws attention to herself. </p>
+  </div>
+</div>
+
+    <div class="click-zone" id="clickZone"></div>
+    <body>
+ <div class="section">
+        <div class="title" onclick="toggleContent(this)"> BACKGROUND:</div>
+        <div class="content"> My name is Wan Iffah Syafiqah Binti Hasnizam. People call me Wan Iffah, Iffah, and Syafiqah. I am still studying and a student at Universiti Teknologi Mara Kedah in the Diploma in Information Management. I joined the Student Volunteer Corps for extracurricular activities at the university. My home state is Kedah. Kedah is the hometown of my parents. I am the eldest among my three siblings. My second sibling is a 17-year-old girl who will be taking the SPM this year. My third sibling is a 12-year-old boy. My mother works as a housemaid, while my father is a trader..</div>
+    </div>
+
+        <div class="section">
+        <div class="title" onclick="toggleContent(this)">HOBBY:</div>
+        <div class="content">My hobby is cooking and baking. I enjoy experimenting with new recipes and cooking for my family and friends. I feel that this hobby can relieve the pressure and stress I face when dealing with problems. In addition, I also enjoy running and jogging. I find that running can help me maintain my health and clear my mind.</div>
+    </div>
+
+    <div class="section">
+        <div class="title" onclick="toggleContent(this)">PERSONAL INTEREST:</div>
+        <div class="content">I really enjoy playing handball. I started playing when I was 10 years old and have continued until now. For me, this sport can relieve stress and is physically demanding. I only play handball if there is a festival involving this sport. This sport teaches me many things.</div>
+    </div>
+
+    <div class="section">
+        <div class="title" onclick="toggleContent(this)">MY HOME LOCATION:</div>
+        <div class="content">I live in Kuala Kedah, Kedah. My house is near Sekolah Kebangsaan Haji Salleh Masri. This is my hometown and my house. I live next to my grandmother's and grandfather's house. You could say that my house is surrounded by my paternal relatives.</div>
+    </div>
+
+    <div class="section">
+        <div class="title" onclick="toggleContent(this)">MY FAVOURITE:</div>
+        <div class="content">FOOD AND DRINK: Nasi Ayam Penyet Top Global and Watermelon Juice<br>COLOUR: Black and Purple<br>SONGS: Somebody's Pleasure<br> SPORT: Handball and Jogging <br> GAME: Pubg <br> MOVIE: Harry Potter and the Half-Blood Prince <br> PLACE: Korea <br> DESSERT: Cupcake and Ice Cream <br> BOOK: Dheos by Anjell  </div>
+    </div>
+<br>
+<body>
+     <a href=" https://www.google.com/search?q=family+by+choice&oq=family&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyDAgCEEUYORixAxiABDIKCAMQABiSAxiABDITCAQQLhjHARixAxjJAxjRAxiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDEzMTdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8
+" target="_blank"> VISIT MY FAVOURITE KDRAMA !!!</a> 
+</body>
+    <script>
+        function toggleContent(element) {
+            // Hide all contents
+            const allContents = document.querySelectorAll('.content');
+            allContents.forEach(content => content.classList.remove('active'));
+
+            // Show the clicked title's content
+            const content = element.nextElementSibling;
+            content.classList.add('active');
+        }
+    </script>
+</body>
+</style>
+</head>
+<br><br>
+<body>
+
+  <audio controls>
+    <source src="audio/taylor.mp3" type="audio/mpeg">
+    <source src="audio/taylor.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
+<br><br>
+<body>
+
+  <audio controls>
+    <source src="audio/aziz.mp3" type="audio/mpeg">
+    <source src="audio/aziz.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
+<br><br>
+<body>
+  <audio controls>
+    <source src="audio/drunk.mp3" type="audio/mpeg">
+    <source src="audio/drunk.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
+<br><br>
+<iframe width="900" height="400" src="https://www.youtube.com/embed/d630Hb14_5k?si=AkXvaSNZt7qQrIpi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<table border="0" align="center" width="100%" cellspacing="5" cellpadding="5">
+<tr align="center" valign="middle">
+<td style="color:white; font-weight: bold; font-family: 'Forte', sans-serif; font-size: 25px;"> FOR REFERENCES </td>
+</tr>
+<br><br>
+<tr align="center" valign="middle">
+         <td>
+     <a href="https://www.instagram.com/iffhsyfqh_/profilecard/?igsh=cWtrbDEzMzVuZ3Yz"><img src="image/ig.png" alt=" INSTAGRAM " style="width:150px;height:80px;"> </a>
+     <a href="https://www.facebook.com/share/18Q4VQh8be/?mibextid=LQQJ4d"><img src="image/fb.png" alt=" FACEBOOK " style="width:180px;height:80px;"> </a>
+     <a href="https://x.com/iffhsyafiqah/status/1862517741657457095?s=46"><img src="image/x.png" alt=" TWITTER" style="width:130px;height:80px;"> </a>
+</td>
+</tr>
+</table>
+<body>
+         <marquee style="color:white;"> "And like the moon, we must go through phases of emptiness to feel full again. (Source: Quotena.com)"</marquee>
+<br>
+            <center> <img src="image/black.png"> </a> </center>  
+</body>
+
+</html>
+    
+
+

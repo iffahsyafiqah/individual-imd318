@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+
+        body {
+            background: url(image/photo4.jpg);
+            background-size: cover;
+            color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+        }
+
+        .container1 {
+            width: 100%;
+            height: 60px;
+            color: white;
+            background: rgb(0, 0, 0);
+        }
+
+        nav {
+            margin: 0 30px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        li {
+            margin: 0 15px;
+            cursor: pointer;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        li a:hover {
+            color: lightgreen;
+        }
+
+        .inp {
+            position: absolute;
+            right: 5px;
+        }
+
+        .input {
+            height: 45px;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+
+        .opener {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+            background: #FFC0CB;
+        }
+
+        .opener h1, .opener p, .opener button {
+            margin: 20px;
+            opacity: 0;
+            animation: fadeIn 2s ease-out forwards;
+        }
+
+        .opener button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #FFC0CB;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .opener button:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content {
+            display: none;
+            padding: 20px;
+            text-align: center;
+            background: none; /* No background color for the main content */
+            color: #333;
+        }
+
+        .content h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .references {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .references img {
+            margin: 10px;
+        }
+
+        body {
+            background-color: #333;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .achievement-thumbnail {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .achievement-image {
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .achievement-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .achievement-thumbnail:hover .achievement-overlay {
+            opacity: 1;
+        }
+        .achievement-text {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+        .image-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+        .popup-images {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .popup-images img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .close-popup {
+            background-color: #444;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .close-popup:hover {
+            background-color: #555;
+        }
+
+        marquee {
+            margin-top: 20px;
+            color: white;
+            font-size: 1em;
+        }
+
+        /* New style for the Education Section with pink background */
+        .education-section {
+            background: #FFC0CB;
+            padding-bottom: 30px; /* Add padding at the bottom */
+        }
+        @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container1 flex">
+        <nav class="flex">
+            <h1 style="font-family: Forte;">WISH</h1>
+            <ul class="flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="myself.html">Myself</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <div class="inp">
+                <input type="text" placeholder="Search" class="input text">
+                <input type="submit" value="Search" class="input submit">
+            </div>
+        </nav>
+    </div>
+
+    <!-- Opener Section -->
+    <div class="opener" id="opener">
+        <h1>Welcome to My Education And Experience Page</h1>
+        <p>Learn, Explore, and Grow with Me!</p>
+        <button onclick="startWebsite()">Start</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content" id="content">
+        <h2 style="color:white;">My Education And Experience Page</h2>
+        <h3 style="color:white;">Here is where you can see my educational journey, experience, and more information.</h3>
+
+        <!-- Education Section with Pink Background -->
+        <div class="education-section"> <!-- Wrapper for Education Section -->
+            <table border="0" align="center" width="100%" cellspacing="5" cellpadding="5">
+                <tr align="center" valign="middle">
+                    <td style="color:black; font-size: 20px; font-style: italic; text-decoration: underline;">
+                        Primary school to university
+                    </td>
+                </tr>
+                <tr align="center" valign="middle">
+                    <td>
+                        <img src="image/sksn.jpg">
+                    </td>
+                </tr>
+                <tr align="center" valign="middle">
+                    <td style="color:black;"> SEKOLAH KEBANGSAAN HAJI SALLEH MASRI </td>
+                </tr>
+                <tr align="center" valign="middle">
+                    <td>
+                        <img src="image/ampang.jpg">
+                    </td>
+                </tr>
+                <tr align="center" valign="middle">
+                    <td style="color:black;"> SEKOLAH MENENGAH KEBANGSAAN SERI AMPANG </td>
+                </tr>
+                <tr align="center" valign="middle">
+                    <td>
+                        <img src="image/kedah.jpg">
+                    </td>
+                </tr>
+                <tr align="center" valign="middle">
+                    <td style="color:black;"> UiTM CAWANGAN KEDAH </td>
+                </tr>
+            </table>
+        <body>
+    <!-- Achievement Thumbnail -->
+    <div class="achievement-thumbnail" onclick="showPopup()">
+        <img src="image/banner.gif" alt="Achievement Image" class="achievement-image">
+        <div class="achievement-overlay">
+            <p class="achievement-text">My Achievement</p>
+        </div>
+    </div>
+
+    <!-- Popup for Images -->
+    <div id="imagePopup" class="image-popup">
+        <div class="popup-images">
+            <img src="image/ac.jpg" alt="Image 1">
+            <img src="image/ac2.png" alt="Image 2">
+            <img src="image/ac1.jpg" alt="Image 3">
+        </div>
+        <button class="close-popup" onclick="closePopup()">Close</button>
+    </div>
+    <script>
+        function showPopup() {
+            document.getElementById('imagePopup').style.display = 'block';
+        }
+        function closePopup() {
+            document.getElementById('imagePopup').style.display = 'none';
+        }
+    </script>
+</body>
+<br><br>
+<body>
+<h2> MY CERTIFICATE </h2>
+<ul>
+  <li> Internet Society Malaysia Chapter inTechGirls Camp 2021</li>
+  <li> Secretary of the Basic Self-Defense and T-Baton Handling Course</li>
+  <li> Bureau of rewards for the crime prevention safety campaign among students</li>
+</ul>  
+</body>
+<br><br>
+    <!-- References Section -->
+    <div class="references" id="references">
+        <h2 style="color:black;" >FOR REFERENCE</h2>
+        <a href="https://www.instagram.com/iffhsyfqh_/profilecard/?igsh=cWtrbDEzMzVuZ3Yz">
+            <img src="image/ig.png" alt="Instagram" style="width:150px;height:80px;">
+        </a>
+        <a href="https://www.facebook.com/share/18Q4VQh8be/?mibextid=LQQJ4d">
+            <img src="image/fb.png" alt="Facebook" style="width:180px;height:80px;">
+        </a>
+        <a href="https://x.com/iffhsyafiqah/status/1862517741657457095?s=46">
+            <img src="image/x.png" alt="Twitter" style="width:130px;height:80px;">
+        </a>
+    </div>
+
+    <p style="color:black;">"And like the moon, we must go through phases of emptiness to feel full again. (Source: Quotena.com)"</p>
+
+    <script>
+        function startWebsite() {
+            // Hide the opener
+            const opener = document.getElementById('opener');
+            opener.style.display = 'none';
+
+            // Show the main content
+            const content = document.getElementById('content');
+            content.style.display = 'block';
+
+            // Show the references
+            const references = document.getElementById('references');
+            references.style.display = 'block';
+        }
+    </script>
+    <center> <img src="image/black.png"> </a> </center> 
+</body>
+</html>
